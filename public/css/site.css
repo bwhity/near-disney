@@ -39,3 +39,18 @@ footer{background:var(--navy);color:#d5e4e6;padding:1.3rem 0;font:400 .9rem syst
 footer a{color:#fff}
 .note{color:var(--muted);font:400 .92rem system-ui}
 .ph{display:grid;place-items:center;color:#6b6258;font:400 .9rem system-ui}
+.brochure{background:#fff;}
+.kicker{font:600 .78rem system-ui;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin:0 0 .35rem}
+.story{max-width:40rem;margin:0 auto;padding:2.4rem 0;text-align:center}
+.story h1,.story h2{margin:.2rem 0 .7rem;font-weight:400}
+.story h1{font-size:clamp(1.9rem,4vw,2.8rem)}
+.story h2{font-size:1.45rem;color:var(--navy)}
+.story p{margin:0 0 .9rem;font-size:1.05rem}
+.split{display:grid;gap:1.6rem;padding:0 0 2.6rem}
+@media(min-width:800px){.split{grid-template-columns:1fr 1fr;align-items:start}}
+.split h2{margin-top:0;font-weight:400;color:var(--navy)}
+.stay{background:var(--navy);color:#eef6f6;text-align:center;padding:2.4rem 1rem}
+.stay h2{margin:0 0 .5rem;font-weight:400;font-size:1.8rem;color:#fff}
+.stay p{max-width:36rem;margin:0 auto 1rem;color:#d5e4e6}
+.contact-block{text-align:center;padding:2.2rem 0 2.8rem}
+.contact-block h2{margin:0 0 .4rem;font-weight:400}
