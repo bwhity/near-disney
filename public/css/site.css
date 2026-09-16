@@ -70,9 +70,9 @@ body.madeira .mail{background:var(--madeira);color:#fff}
 @media(min-width:800px){.circles{grid-template-columns:1fr 1fr 1fr}}
 .circles h2{margin:.9rem 0 .45rem;font-weight:400;font-size:1.35rem}
 .circles p{margin:0 auto;max-width:22rem;color:#555;font-size:.98rem}
-.round{width:220px;height:220px;border-radius:50%;object-fit:cover;margin:0 auto;background:#e6e0d8;display:block}
-.info-head{text-align:center;padding:2rem 0 .4rem}
-.info-head h2{color:var(--madeira);letter-spacing:.12em;font:700 1.6rem system-ui;margin:0}
+.round{width:253px;height:253px;border-radius:50%;object-fit:cover;margin:0 auto;background:#e6e0d8;display:block}
+.info-head{text-align:center;padding:2.4rem 0 1.8rem}
+.info-head h2{color:var(--madeira);letter-spacing:.12em;font:700 1.6rem system-ui;margin:0 0 1rem}
 .hero-photo{min-height:78vh;display:grid;align-items:end;color:#fff;background:#12343c center/cover no-repeat}
 .hero-photo.florida{background-image:linear-gradient(180deg,rgba(18,52,60,.2),rgba(18,52,60,.72)),url("../images/disney/F%20Outside%20Background.jpg")}
 .hero-photo .inner{padding:5rem 0 3rem}
