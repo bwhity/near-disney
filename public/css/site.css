@@ -18,11 +18,12 @@ nav a{color:#e7f1f2;text-decoration:none;font:400 .92rem system-ui}
 .dest h2{margin:0 0 .3rem}.dest p{margin:0;color:var(--muted);font-family:system-ui}
 .dest:hover{outline:2px solid var(--teal)}
 .slideshow{position:relative;background:#111}
-.slideshow img{width:100%;height:min(72vh,680px);object-fit:cover;display:none}
+.slideshow .stage{min-height:min(72vh,680px);display:grid;place-items:center;background:#111}
+.slideshow img{width:100%;max-height:min(72vh,680px);height:auto;object-fit:contain;display:none;background:#111}
 .slideshow img.on{display:block}
 .slide-btn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.45);color:#fff;border:0;width:44px;height:44px;font-size:1.4rem;cursor:pointer}
 .prev{left:.6rem}.next{right:.6rem}
-.dots{position:absolute;left:0;right:0;bottom:.7rem;display:flex;justify-content:center;gap:.35rem}
+.dots{position:absolute;left:0;right:0;bottom:.7rem;display:flex;justify-content:center;gap:.35rem;flex-wrap:wrap}
 .dots button{width:8px;height:8px;border-radius:50%;border:0;background:rgba(255,255,255,.4);cursor:pointer}
 .dots button.on{background:#fff}
 .intro{padding:2rem 0 1rem}
@@ -51,6 +52,12 @@ footer a{color:#fff}
 .stay{background:#111;color:#eef6f6;text-align:center;padding:3.2rem 1rem}
 .stay h2{margin:0 0 .5rem;font-weight:400;font-size:2rem;color:#fff}
 .stay p{max-width:36rem;margin:0 auto 1rem;color:#c9c9c9}
+.stay-split{display:grid;background:#111;color:#eef6f6}
+@media(min-width:800px){.stay-split{grid-template-columns:1fr 1fr;align-items:stretch}}
+.stay-split img{width:100%;height:100%;min-height:280px;object-fit:cover}
+.stay-split .copy{padding:2.4rem 1.6rem;display:flex;flex-direction:column;justify-content:center}
+.stay-split h2{margin:0 0 .6rem;font-weight:400;font-size:2rem;color:#fff}
+.stay-split p{margin:0 0 1rem;color:#c9c9c9}
 .contact-block{text-align:center;padding:2.2rem 0 2.8rem}
 .contact-block h2{margin:0 0 .4rem;font-weight:400}
 body.madeira{background:#fff;color:#333}
@@ -74,3 +81,6 @@ body.madeira .mail{background:var(--madeira);color:#fff}
 .stack{max-width:46rem;margin:0 auto;padding:2.2rem 0 0}
 .stack h2{margin:1.6rem 0 .5rem;font-weight:400;color:var(--navy)}
 .stack p{margin:0 0 .9rem}
+.map-box{margin:1.4rem auto 0;max-width:720px;text-align:left;background:var(--card);border:1px solid var(--line);padding:.8rem 1rem 1rem}
+.map-box summary{cursor:pointer;font:600 .95rem system-ui;list-style:none}
+.map-box iframe{width:100%;height:320px;border:0;margin-top:.8rem}
