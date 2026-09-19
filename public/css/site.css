@@ -98,3 +98,4 @@ body.madeira .mail{background:var(--madeira);color:#fff}
 .legend{display:flex;justify-content:center;gap:1rem;font:400 .85rem system-ui;color:var(--muted);margin:0 0 1rem}
 .legend i{display:inline-block;width:12px;height:12px;margin-right:.3rem;vertical-align:middle}
 .legend .o{background:#e8f6ee}.legend .b{background:#ecdada}
+.owc{display:block;width:100%;max-width:900px;height:720px;border:0;margin:1rem auto 0;background:#fff}
