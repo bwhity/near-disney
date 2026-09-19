@@ -84,3 +84,17 @@ body.madeira .mail{background:var(--madeira);color:#fff}
 .map-box{margin:1.4rem auto 0;max-width:720px;text-align:left;background:var(--card);border:1px solid var(--line);padding:.8rem 1rem 1rem}
 .map-box summary{cursor:pointer;font:600 .95rem system-ui;list-style:none}
 .map-box iframe{width:100%;height:320px;border:0;margin-top:.8rem}
+.cal{max-width:420px;margin:0 auto 2rem;background:var(--card);border:1px solid var(--line);padding:1rem 1.1rem 1.2rem}
+.cal-bar{display:flex;justify-content:space-between;align-items:center;gap:.6rem;margin-bottom:.8rem}
+.cal-title{margin:0;font:600 1rem system-ui}
+.cal-bar button{border:1px solid var(--line);background:#fff;width:36px;height:36px;cursor:pointer}
+.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
+.cal-grid .dow{font:600 .72rem system-ui;color:var(--muted);text-align:center;padding:.2rem 0}
+.cal-grid .blank{min-height:36px}
+.cal-grid button{border:0;min-height:36px;background:transparent;font:400 .9rem system-ui;cursor:pointer}
+.cal-grid button.open{background:#e8f6ee}
+.cal-grid button.busy{background:#ecdada;color:#7a3a3a;text-decoration:line-through;cursor:default}
+.cal-grid button.past{color:#bbb;cursor:default}
+.legend{display:flex;justify-content:center;gap:1rem;font:400 .85rem system-ui;color:var(--muted);margin:0 0 1rem}
+.legend i{display:inline-block;width:12px;height:12px;margin-right:.3rem;vertical-align:middle}
+.legend .o{background:#e8f6ee}.legend .b{background:#ecdada}
