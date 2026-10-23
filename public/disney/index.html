@@ -108,7 +108,9 @@
   </div>
 </section>
 
-<section class="quote" id="quote">
+<!-- QUOTE FORM SWITCH: data-quote-live="false" shows the WhatsApp/Email fallback and hides the form.
+     Set it to "true" once Cloudflare Email Sending is set up (see QUOTE-FORM-SETUP.md). -->
+<section class="quote" id="quote" data-quote-live="false">
   <div class="wrap quote-grid">
     <div class="quote-photo">
       <img src="../images/disney/D7.webp" alt="Private pool at the Formosa Gardens home" loading="lazy">
@@ -123,6 +125,13 @@
       <h2>Get my all-in quote</h2>
       <p class="from-line">From $150/night + $180 cleaning, no booking fees</p>
       <p class="pay-line">Pay by card, PayPal, Apple Pay, check or bank transfer</p>
+      <div class="quote-fallback">
+        <p>Tell us your dates and we&rsquo;ll reply with an all-in quote, usually the same day.</p>
+        <div class="cta">
+          <a class="btn wa" href="https://wa.me/15085071559?text=Hi%20-%20question%20about%20the%20Formosa%20Gardens%20home">WhatsApp us</a>
+          <a class="btn mail" href="mailto:vacation@near-disney.com?subject=Sea%20Pearl%20quote">Email us</a>
+        </div>
+      </div>
       <form id="quote-form" method="post" action="/api/quote" novalidate>
         <div class="row2">
           <label>Check-in<input type="date" name="checkin" required></label>

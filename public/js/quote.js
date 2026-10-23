@@ -3,6 +3,8 @@
 (function () {
   var form = document.getElementById("quote-form");
   if (!form) return;
+  var sec = document.getElementById("quote");
+  if (sec && sec.getAttribute("data-quote-live") === "false") return; // form switched off: fallback shown instead
   var status = form.querySelector(".form-status");
   var ci = form.elements.checkin, co = form.elements.checkout;
   form.elements.t.value = String(Date.now());

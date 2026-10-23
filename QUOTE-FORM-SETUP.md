@@ -9,6 +9,23 @@ a mail app on the guest's phone.
 
 Nothing on this branch has been deployed, pushed, or configured on Cloudflare.
 
+## Current state: switched OFF (safe to deploy without Email Sending)
+- **`wrangler.jsonc`**: the `send_email` / `QUOTE_EMAIL` binding is commented out,
+  so the Worker deploys without Email Sending. If anything still posts to
+  `/api/quote`, it replies 503 "The form is not switched on yet…".
+- **`public/disney/index.html`**: `<section class="quote" id="quote" data-quote-live="false">`.
+  With `"false"`, the form is hidden (by CSS, and `js/quote.js` skips its setup) and
+  this shows in its place: "Tell us your dates and we’ll reply with an all-in
+  quote, usually the same day." plus **WhatsApp us** and **Email us**
+  (mailto:vacation@near-disney.com?subject=Sea%20Pearl%20quote) buttons. The
+  from-price line and payment line stay visible.
+
+### To switch the form back ON (after steps 1–3 below)
+1. `wrangler.jsonc`: uncomment the three `"send_email"` lines.
+2. `public/disney/index.html`: change `data-quote-live="false"` to `data-quote-live="true"`.
+   This is the one-line page switch. Nothing else on the page needs to change.
+3. Deploy (merge to main), then run the test in step 6.
+
 ## Why this approach
 - The site is already a Cloudflare Worker with static assets (`wrangler.jsonc`,
   no build step), so a Worker route is the smallest change. It needs no new

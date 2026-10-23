@@ -12,9 +12,13 @@
   // Cloudflare Email Service. Needs near-disney.com onboarded under
   // Email Service > Email Sending first: see QUOTE-FORM-SETUP.md.
   // Locked to one recipient so the form can only ever email the inbox.
-  "send_email": [
-    { "name": "QUOTE_EMAIL", "destination_address": "vacation@near-disney.com" }
-  ],
+  //
+  // DISABLED until Email Sending is set up. To re-enable, uncomment the three
+  // lines below, following QUOTE-FORM-SETUP.md (and set data-quote-live="true" on
+  // /disney/). Without the binding, /api/quote replies 503 "not switched on".
+  // "send_email": [
+  //   { "name": "QUOTE_EMAIL", "destination_address": "vacation@near-disney.com" }
+  // ],
   "vars": {
     "QUOTE_FROM": "quotes@near-disney.com"
   }
