@@ -171,3 +171,6 @@ body.madeira .mail{background:var(--madeira);color:#fff}
 .brand-card-mark{width:72px;height:72px;border-radius:14px}
 .brand-card .host-line{max-width:22rem}
 @media(min-width:800px){.brand-card{flex-wrap:nowrap;align-items:center}.brand-card .btn{margin-top:0;white-space:nowrap}}
+/* Madeira header: plain serif wordmark */
+.brand-wordmark{font:400 1.35rem/1.2 Georgia,serif;letter-spacing:.01em;color:#fff}
+@media(max-width:480px){.brand-wordmark{font-size:1.15rem}}
