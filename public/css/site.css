@@ -99,3 +99,51 @@ body.madeira .mail{background:var(--madeira);color:#fff}
 .legend i{display:inline-block;width:12px;height:12px;margin-right:.3rem;vertical-align:middle}
 .legend .o{background:#e8f6ee}.legend .b{background:#ecdada}
 .owc{display:block;width:100%;max-width:900px;height:720px;border:0;margin:1rem auto 0;background:#fff}
+/* Reviews block + quote form (Create pass 1) */
+.ph-chip{display:inline-block;background:#fff3c4;color:#6b5200;border:1px dashed #c9a100;border-radius:4px;padding:0 .35rem;font:600 .9em system-ui}
+.ph-text{color:#8a7a52;font-style:italic}
+.reviews{background:var(--paper);padding:2.2rem 0 2.4rem}
+.reviews-head{text-align:center;margin-bottom:1.2rem}
+.rating{font:600 1.05rem system-ui;color:var(--navy);margin:0}
+.star-big{color:#e8a317;font-size:1.3rem}.rating .dot{color:var(--muted);margin:0 .2rem}
+.review-grid{display:grid;gap:.9rem;grid-auto-flow:column;grid-auto-columns:82%;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:.4rem}
+.review-grid>*{scroll-snap-align:start}
+@media(min-width:800px){.review-grid{grid-auto-flow:row;grid-template-columns:repeat(4,1fr);overflow:visible}}
+.review-card{margin:0;background:var(--card);border:1px solid var(--line);padding:1rem 1rem 1.1rem;display:flex;flex-direction:column;gap:.45rem}
+.review-card blockquote{margin:0;font-size:1rem;flex:1}
+.review-card figcaption{font:400 .85rem system-ui;color:var(--muted)}
+.stars{color:#e8a317;letter-spacing:.08em;font-size:.95rem}
+.src-badge{align-self:flex-start;font:700 .72rem system-ui;letter-spacing:.04em;padding:.2rem .5rem;border-radius:999px;color:#fff;background:var(--navy)}
+.src-badge.airbnb{background:#ff385c}.src-badge.booking{background:#003b95}.src-badge.brotravels{background:var(--teal)}.src-badge.jwguest{background:#5b4a8a}
+.host-card{background:var(--navy);color:#e7f1f2;padding:1.1rem;text-align:center;display:flex;flex-direction:column;align-items:center;gap:.2rem}
+@media(min-width:800px){.host-card{grid-column:span 2;flex-direction:row;flex-wrap:wrap;text-align:left;justify-content:center;column-gap:1rem}}
+.host-photo{width:84px;height:84px;border-radius:50%;object-fit:cover}
+.ph-photo{display:grid;place-items:center;background:#fff3c4;color:#6b5200;border:2px dashed #c9a100;font:600 .72rem system-ui;text-align:center;padding:.4rem}
+.host-card p{margin:0}.host-kicker{font:600 .72rem system-ui;letter-spacing:.14em;text-transform:uppercase;color:#9fc7cb}
+.host-name{font-size:1.4rem;color:#fff}.host-line{font:400 .92rem system-ui;color:#cfe0e2}
+.btn.small{padding:.5rem .9rem;font-size:.88rem;margin-top:.4rem}
+.quote{padding:2.4rem 0 1rem;background:#fff}
+.quote-grid{display:grid;gap:1.4rem}
+@media(min-width:860px){.quote-grid{grid-template-columns:1fr 1.1fr;align-items:stretch}}
+.quote-photo{position:relative;min-height:220px;overflow:hidden}
+.quote-photo img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.quote-icons{position:absolute;left:0;right:0;bottom:0;margin:0;padding:.7rem;list-style:none;display:flex;gap:.5rem;justify-content:center;background:linear-gradient(0deg,rgba(18,52,60,.85),rgba(18,52,60,0))}
+.quote-icons li{background:rgba(255,255,255,.92);color:var(--navy);font:400 .8rem system-ui;padding:.35rem .6rem;border-radius:999px}
+.quote-icons b{font-weight:800}
+.quote-box h2{margin:0 0 .3rem;font-weight:400;color:var(--navy);font-size:1.9rem}
+.from-line{font:600 1rem system-ui;margin:0 0 1rem;color:var(--ink)}
+.from-line .price{font-size:1.05em}
+#quote-form label{display:block;font:600 .85rem system-ui;color:var(--navy);margin:0 0 .75rem}
+#quote-form input[type=date],#quote-form input[type=text],#quote-form input[type=email],#quote-form select,#quote-form textarea{display:block;width:100%;margin-top:.3rem;padding:.65rem .7rem;font:400 1rem system-ui;border:1px solid #cfc5b5;border-radius:6px;background:#fff;color:var(--ink);min-height:44px}
+#quote-form .row2{display:grid;grid-template-columns:1fr 1fr;gap:.75rem}
+#quote-form fieldset.pool{border:0;margin:0 0 .75rem;padding:0}
+#quote-form legend{font:600 .85rem system-ui;color:var(--navy);padding:0;margin-bottom:.3rem}
+#quote-form legend small,#quote-form label small{font-weight:400;color:var(--muted)}
+#quote-form label.inline{display:inline-flex;align-items:center;gap:.35rem;font-weight:400;font-size:1rem;margin:.35rem 1rem 0 0;color:var(--ink)}
+#quote-form label.check{display:flex;font-size:.9rem;color:var(--muted);margin:-.2rem 0 .9rem}
+#quote-form input[type=radio],#quote-form input[type=checkbox]{width:20px;height:20px;accent-color:var(--teal)}
+.hp{position:absolute!important;left:-9999px;width:1px;height:1px;overflow:hidden}
+.btn.big{width:100%;border:0;cursor:pointer;padding:.95rem 1rem;font-size:1.05rem}
+.btn.big:disabled{opacity:.6}
+.form-status{margin:.7rem 0 0;font:600 .95rem system-ui;min-height:1.2em}
+.form-status.ok{color:#1b7a3d}.form-status.err{color:#b3261e}

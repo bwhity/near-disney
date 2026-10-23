@@ -1,7 +1,21 @@
 {
   "name": "near-disney",
   "compatibility_date": "2026-09-15",
+  // Worker code only runs for /api/* (the quote form). Everything else is
+  // served straight from ./public as before.
+  "main": "src/worker.js",
   "assets": {
-    "directory": "./public"
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"]
+  },
+  // Cloudflare Email Service. Needs near-disney.com onboarded under
+  // Email Service > Email Sending first: see QUOTE-FORM-SETUP.md.
+  // Locked to one recipient so the form can only ever email the inbox.
+  "send_email": [
+    { "name": "QUOTE_EMAIL", "destination_address": "vacation@near-disney.com" }
+  ],
+  "vars": {
+    "QUOTE_FROM": "quotes@near-disney.com"
   }
 }
