@@ -77,7 +77,7 @@ async function handleQuote(request, env) {
     `Check-in:    ${q.checkin}`,
     `Check-out:   ${q.checkout}  (${q.nights} nights)`,
     `Guests:      ${q.guestsLabel}`,
-    `Pool heat:   ${q.poolHeat ? "Yes ($15/day)" : "No"}`,
+    `Pool heat:   ${q.poolHeat ? "Yes" : "No"}`,
     `Message:     ${q.message || "-"}`,
     "",
     "Reply to this email to answer the guest directly.",
