@@ -147,3 +147,22 @@ body.madeira .mail{background:var(--madeira);color:#fff}
 .btn.big:disabled{opacity:.6}
 .form-status{margin:.7rem 0 0;font:600 .95rem system-ui;min-height:1.2em}
 .form-status.ok{color:#1b7a3d}.form-status.err{color:#b3261e}
+/* Pass 2: brand slot, quick facts, info lists */
+.brand-slot{display:inline-flex;align-items:center;gap:.55rem;font:400 1.15rem Georgia,serif;letter-spacing:0}
+.brand-mark{width:28px;height:28px;border-radius:6px}
+.facts-band{background:var(--navy);color:#e7f1f2;border-top:1px solid rgba(255,255,255,.12)}
+.quick-facts{list-style:none;margin:0;padding:.9rem 0;display:grid;grid-template-columns:repeat(5,1fr);gap:.6rem}
+.quick-facts li{display:flex;flex-direction:column;align-items:center;text-align:center;font:400 .92rem system-ui;gap:.2rem}
+.quick-facts b{font-weight:800;color:#fff}
+.quick-facts small{font-size:.72rem;color:#9fc7cb}
+.quick-facts svg{width:26px;height:26px;fill:none;stroke:#7fc4c9;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+@media(max-width:640px){.quick-facts{grid-template-columns:repeat(3,1fr);row-gap:.9rem}.quick-facts li{font-size:.85rem}}
+.info-lists{padding:2.4rem 0 1.6rem}
+.info-lead{max-width:40rem;margin:0 auto 1.4rem;text-align:center;font-size:1.1rem;color:var(--navy)}
+.info-grid{display:grid;gap:1.1rem}
+@media(min-width:720px){.info-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.info-grid{grid-template-columns:repeat(3,1fr)}}
+.info-grid>div{background:var(--card);border:1px solid var(--line);padding:1rem 1.15rem 1.1rem}
+.info-grid h2{margin:0 0 .4rem;font-weight:400;color:var(--navy);font-size:1.35rem}
+.info-grid .facts li{margin:.2rem 0}
+.info-grid .note{margin:.6rem 0 0}
