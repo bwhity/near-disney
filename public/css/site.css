@@ -174,3 +174,9 @@ body.madeira .mail{background:var(--madeira);color:#fff}
 /* Madeira header: plain serif wordmark */
 .brand-wordmark{font:400 1.35rem/1.2 Georgia,serif;letter-spacing:.01em;color:#fff}
 @media(max-width:480px){.brand-wordmark{font-size:1.15rem}}
+
+/* v3: real reviews summary + payment line */
+.rating-cats{list-style:none;margin:.45rem 0 0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:.25rem .9rem;font:400 .8rem system-ui;color:var(--muted)}
+.review-card blockquote{line-height:1.5}
+.pay-line{font:500 .9rem system-ui;color:var(--muted);margin:-.6rem 0 1rem}
+#quote-form legend small{display:block;font-size:.78rem;margin-top:.1rem}
